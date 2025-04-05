@@ -1,0 +1,25 @@
+{
+  "name": "poems",
+  "version": "0.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jellyyfish/poems.git"
+  },
+  "keywords": [],
+  "author": "actualjellyfish",
+  "license": "WTFPL",
+  "bugs": {
+    "url": "https://github.com/jellyyfish/poems/issues"
+  },
+  "homepage": "https://actualjellyfish.neocities.org/",
+  "dependencies": {
+    "@11ty/eleventy": "^3.0.0",
+    "pretty": "^2.0.0"
+  }
+}

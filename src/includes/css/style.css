@@ -1,0 +1,81 @@
+
+body {
+    background-color: rgb(28, 27, 29);
+    color: rgb(186, 229, 251);
+
+    font-family: Mulish;
+    font-size: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link {
+    color: rgb(113, 208, 255);
+}
+
+a:visited {
+    color: rgb(255, 255, 255);
+}
+
+a:hover {
+    color: rgb(162, 223, 253);
+}
+
+h1 {
+    font-family: GeometryAddict;
+    margin: 0;
+    font-size: 2em;
+}
+
+h1 a:visited {
+    color: rgb(113, 208, 255);
+}
+
+h1 a:hover {
+    color: rgb(162, 223, 253);
+}
+
+h2 {
+    margin: 0;
+}
+
+p {
+    white-space: pre-line;
+    font-size: 1em;
+}
+
+.content {
+    width: 60%;
+    margin: 5vh 0;
+    margin-left: auto;
+    margin-right: auto;
+
+    display: flex;
+}
+
+.side-header {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    margin: 0 3vw
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin: 0 3vw
+}
+
+.date {
+    font-family: NineMatScript;
+    font-size: 3em;
+    writing-mode: vertical-rl;
+    margin-top: 5vh;
+}
+
+.verses {
+    margin-top: 5vh;
+}

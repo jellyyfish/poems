@@ -1,0 +1,12 @@
+{% extends 'base.njk' %}
+
+{% block body %}
+<div class="side-header">
+    {% include 'home-link.njk' %}
+    <h2 class="date">{{ glyph }}</h2>
+</div>
+
+<div class="verses">
+    {% verses %}{% block verses %}{% endblock %}{% endverses %}
+</div>
+{% endblock %}
