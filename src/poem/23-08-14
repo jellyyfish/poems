@@ -1,0 +1,28 @@
+---
+tags: poem
+---
+{% extends 'poem.njk' %}
+
+{% block verses %}
+remember the bees who remain
+when their hive gets loaded onto a truck,
+off to some other far away farm
+
+how long do they look
+for their queen?
+
+remember the starlings
+who didn't realize the flock had headed south,
+down the coast
+
+when the sun sets
+they'll miss their murmurations
+
+remember the whales
+breaking from the pod,
+headed straight to shore
+
+refusing to fall abyssal
+we'd rather choke helpless in the sand
+than be consumed
+{% endblock %}
