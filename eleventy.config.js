@@ -19,6 +19,6 @@ export default function(eleventyConfig) {
             return pretty(content)
 		}
 
-		return content;
+		return content
     })
-};
+}

@@ -3,9 +3,9 @@
 {% block body %}
 <div class="home">
   {% include 'home-link.njk' %}
-  <div>
-    {%- for poem in collections.poem -%}
-      <a class="date" href="{{ poem.url }}">
+  <div class="poem-links">
+    {%- for poem in collections.poem | reverse -%}
+      <a class="glyph" href="{{ poem.url }}">
         {{ poem.data.glyph }}
       </a>
     {%- endfor -%}
