@@ -18,7 +18,7 @@ h1 {
     font-family: GeometryAddict;
     font-size: 2em;
     margin: 0;
-    margin-bottom: 5vh;
+    margin-bottom: 1em;
 }
 
 h2 {
@@ -27,7 +27,7 @@ h2 {
 
 p {
     white-space: pre-line;
-    font-size: 1em;
+    font-size: 0.6em;
 }
 
 a {
