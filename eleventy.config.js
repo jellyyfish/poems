@@ -1,9 +1,11 @@
+import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
 import pretty from "pretty";
 
 export default function(eleventyConfig) {
     eleventyConfig.setInputDirectory("src")
     eleventyConfig.setIncludesDirectory("includes")
     eleventyConfig.addPassthroughCopy("src/font")
+    eleventyConfig.addPassthroughCopy("src/photo")
 
     eleventyConfig.setOutputDirectory("srv/www")
 
@@ -18,7 +20,8 @@ export default function(eleventyConfig) {
         if ((this.page.outputPath || "").endsWith(".html")) {
             return pretty(content)
 		}
-
 		return content
     })
+
+    eleventyConfig.addPlugin(eleventyImageTransformPlugin)
 }

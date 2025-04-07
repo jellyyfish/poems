@@ -49,3 +49,11 @@
     box-sizing: border-box;
     width: 100%;
 }
+
+.photo {
+    width: 100%;
+    height: auto;
+    max-height: 75vh;
+    object-fit: contain;
+    object-position: left;
+}

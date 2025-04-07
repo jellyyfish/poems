@@ -8,6 +8,13 @@
     <div class="poem-body">
         <h2 class="glyph">{{ glyph }}</h2>
         <div class="verses">
+            <img
+                class="photo"
+                eleventy:optional="keep" 
+                onError="this.remove();" 
+                alt="{% block imgalt %}{% endblock %}" 
+                src="/photo/{{ page.fileSlug }}.jpg"
+            >
             {% verses %}{% block verses %}{% endblock %}{% endverses %}
         </div>
     </div>
