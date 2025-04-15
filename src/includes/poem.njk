@@ -8,7 +8,7 @@
     <div class="poem-body">
         <h2 class="glyph">{{ glyph }}</h2>
         <div class="verses">
-            {%- renderPhoto page.fileSlug %}
+            {%- renderPhoto page.fileSlug, imgAlt %}
             {% verses %}{% block verses %}{% endblock %}{% endverses %}
         </div>
     </div>

@@ -19,12 +19,12 @@ export default function(eleventyConfig) {
             .join("")
     })
 
-    eleventyConfig.addAsyncShortcode("renderPhoto", async function (photoSlug, data={}) {
+    eleventyConfig.addAsyncShortcode("renderPhoto", async function (photoSlug, alt, data={}) {
         let photoPath = `photo/${photoSlug}.jpg`
         if (fs.existsSync(path.join("./src", photoPath))) {
           return `<img
                 class="photo"
-                alt="{% block imgalt %}{% endblock %}" 
+                alt="${alt ?? ""}" 
                 src="/${photoPath}"
             >`;
         }
