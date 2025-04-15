@@ -2,12 +2,6 @@
     margin: 4vh 4vh;
 }
 
-@media screen and (min-width: 70rem) {
-    .content {
-        margin: 4vh 30vh;
-    }
-}
-
 .poem-body {
     display: flex;
     margin-bottom: 5em;
@@ -35,7 +29,6 @@
 }
 
 .glyph {
-    font-family: NineMatScript, Menlo, Courier, monospace;
     font-size: 3.5em;
     font-weight: normal;
     writing-mode: sideways-rl;

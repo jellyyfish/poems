@@ -1,21 +1,10 @@
 body {
-    background-color: rgb(28, 27, 29);
-    color: rgb(186, 229, 251);
-
-    font-family: Mulish, Helvetica, sans-serif;
     font-size: 200%;
     width: 100%;
     margin: 0
 }
 
-@media screen and (min-width: 70rem) {
-    body {
-        font-size: 125%;
-    }
-}
-
 h1 {
-    font-family: GeometryAddict, cursive;
     font-size: 2em;
     margin: 0;
     margin-bottom: 1em;
@@ -27,29 +16,9 @@ h2 {
 
 p {
     white-space: pre-line;
-    font-size: 0.6em;
+    font-size: 0.55em;
 }
 
 a {
     text-decoration: none;
-}
-
-a:link {
-    color: rgb(113, 208, 255);
-}
-
-a:visited {
-    color: rgb(115, 113, 159);
-}
-
-a:hover {
-    color: rgb(162, 223, 253);
-}
-
-h1 a:visited {
-    color: rgb(113, 208, 255);
-}
-
-h1 a:hover {
-    color: rgb(162, 223, 253);
 }

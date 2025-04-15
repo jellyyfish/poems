@@ -1,0 +1,24 @@
+body {
+    background-color: rgb(28, 27, 29);
+    color: rgb(186, 229, 251);
+}
+
+a:link {
+    color: rgb(113, 208, 255);
+}
+
+a:visited {
+    color: rgb(115, 113, 159);
+}
+
+a:hover {
+    color: rgb(162, 223, 253);
+}
+
+h1 a:visited {
+    color: rgb(113, 208, 255);
+}
+
+h1 a:hover {
+    color: rgb(162, 223, 253);
+}
