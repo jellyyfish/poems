@@ -2,7 +2,7 @@
 
 {% block body %}
 <div class="home">
-  {% include 'home-link.njk' %}
+  <h1><a href="/">poems</a></h1>
   <div class="poem-links">
     {%- for poem in collections.poem | reverse -%}
       <a class="glyph" href="{{ poem.url }}">

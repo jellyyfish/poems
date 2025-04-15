@@ -9,7 +9,18 @@
 
 .poem-body .glyph {
     display: flex;
+}
+
+.poem-sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-right: 0.2em;
+}
+
+.poem-nav {
+    font-size: 0.5em;
+    display: inline-block;
 }
 
 .home {

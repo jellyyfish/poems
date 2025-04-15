@@ -3,12 +3,13 @@
 {% block title %}{{ super() }} [{{ glyph }}]{% endblock %}
 {% block body %}
 <div class="poem-page">
-    {% include 'home-link.njk' %}
-
+    <h1><a href="/">poems</a> <div class="poem-nav">{% glyphNav glyph %}</div></h1>
     <div class="poem-body">
-        <h2 class="glyph">{{ glyph }}</h2>
+        <div class="poem-sidebar">
+            <h2 class="glyph">{{ glyph }}</h2>
+        </div>
         <div class="verses">
-            {%- renderPhoto page.fileSlug, imgAlt %}
+            {% renderPhoto page.fileSlug, imgAlt %}
             {% verses %}{% block verses %}{% endblock %}{% endverses %}
         </div>
     </div>

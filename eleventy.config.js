@@ -19,17 +19,32 @@ export default function(eleventyConfig) {
             .join("")
     })
 
+    eleventyConfig.addAsyncShortcode("glyphNav", async function (glyph) {
+        let poems = this.ctx.collections.poem.toReversed();
+        let glyphIndex = poems.findIndex((poem) => poem.data.glyph === glyph)
+        if (glyphIndex < 0) { 
+            return "&lt;-&gt;";
+        }
+        let previous = poems[glyphIndex - 1]
+        let next = poems[glyphIndex + 1]
+        let a = (data, label) => {
+            let url = data !== undefined ? data.page.filePathStem : null
+            return url != null ? `<a href="${url}">${label}</a>` : label
+        }
+        return `${a(previous, "&lt;")}-${a(next, "&gt;")}`;
+    });
+
     eleventyConfig.addAsyncShortcode("renderPhoto", async function (photoSlug, alt, data={}) {
         let photoPath = `photo/${photoSlug}.jpg`
         if (fs.existsSync(path.join("./src", photoPath))) {
-          return `<img
+            return `<img
                 class="photo"
                 alt="${alt ?? ""}" 
                 src="/${photoPath}"
             >`;
         }
         return "";
-      });
+    });
 
     eleventyConfig.addTransform("format", function (content) {
         if ((this.page.outputPath || "").endsWith(".html")) {
