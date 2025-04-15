@@ -44,7 +44,7 @@
 .photo {
     width: 100%;
     height: auto;
-    max-height: 75vh;
+    max-height: 90vh;
     object-fit: contain;
     object-position: left;
 }
